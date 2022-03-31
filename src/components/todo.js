@@ -88,8 +88,10 @@ const Todo=()=>{
                                         <h3>
                                          {elem.name}
                                         </h3>
-                                        <i className="far fa-trash-alt add-btn" title="Delete Item" id="delete" onClick={()=>deleteItem(elem.id)}></i>
-                                        <i class="far fa-edit add-btn" title="Edit Item"  onClick={()=>editItem(elem.id)}></i>
+                                        <div>
+                                            <i className="far fa-trash-alt add-btn" title="Delete Item" id="delete" onClick={()=>deleteItem(elem.id)}></i>
+                                            <i class="far fa-edit add-btn" title="Edit Item"  onClick={()=>editItem(elem.id)}></i>
+                                        </div>
                                     </div> 
                                 )
                             })
